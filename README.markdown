@@ -20,6 +20,25 @@ With [pathogen.vim][pathogen]:
     cd ~/.vim/bundle && \
     git clone https://github.com/riceissa/vim-proselint.git
 
+## Usage
+
+Below are some ways to use the plugin. Of course, you can set mappings to cut
+down on the typing.
+
+```vim
+" Set the compiler
+:compiler proselint
+
+" Check the current file
+:make %
+
+" Check all markdown files in current directory
+:make *.md
+
+" With dispatch.vim: https://github.com/tpope/vim-dispatch
+:Dispatch proselint %
+```
+
 ## License
 
 Distributed under the same terms as Vim itself. See `:help license`.
